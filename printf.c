@@ -16,7 +16,7 @@ int	main(void)
 	printf("-------------------------\n");
 	printf("Character: %c\n", c);
 	printf("String: %s\n", s);
-	printf("Void pointer: %p\n", p);
+	printf("Pointer: %p\n", p);
 	printf("Digit: %d\n", d);
 	printf("Integer: %i\n", i);
 	printf("Unsigend integer: %u\n", u);
