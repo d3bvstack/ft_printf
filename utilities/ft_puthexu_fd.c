@@ -22,14 +22,14 @@
 
 #include "../ft_printf.h"
 
-int	ft_puthexu_fd(int n, int fd)
+int	ft_puthexu_fd(unsigned long n, int fd)
 {
 	char	*hex;
-	char	hex_result[9];
+	char	hex_result[17];
 	int		i;
 
 	hex = "0123456789ABCDEF";
-	i = 8;
+	i = 16;
 	hex_result[i] = '\0';
 	i--;
 	if (n == 0)
@@ -46,6 +46,6 @@ int	ft_puthexu_fd(int n, int fd)
 			i--;
 		}
 	}
-	write(fd, &hex_result[i + 1], 8 - i - 1);
-	return (8 - i - 1);
+	write(fd, &hex_result[i + 1], 16 - i - 1);
+	return (16 - i - 1);
 }

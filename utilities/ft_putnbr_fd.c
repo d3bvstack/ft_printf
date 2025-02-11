@@ -17,7 +17,7 @@ static int	ft_count(int n)
 	int	i;
 
 	i = 0;
-	if (n < 0)
+	if (n <= 0)
 		i += 1;
 	while (n != 0)
 	{
@@ -29,23 +29,23 @@ static int	ft_count(int n)
 
 int	ft_putnbr_fd(int n, int fd)
 {
-	int	number;
+	int	i;
 
-	number = n;
-	if (number == -2147483648)
+	i = ft_count(n);
+	if (n == -2147483648)
 		ft_putstr_fd("-2147483648", fd);
 	else
 	{
-		if (number < 0)
+		if (n < 0)
 		{
-			number = -number;
+			n = -n;
 			ft_putchar_fd('-', fd);
 		}
-		if (number > 9)
+		if (n > 9)
 		{
-			ft_putnbr_fd(number / 10, fd);
+			ft_putnbr_fd(n / 10, fd);
 		}
-		ft_putchar_fd(number % 10 + '0', fd);
+		ft_putchar_fd(n % 10 + '0', fd);
 	}
-	return (ft_count(n));
+	return (i);
 }

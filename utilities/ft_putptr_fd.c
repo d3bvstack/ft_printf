@@ -25,14 +25,17 @@
 
 int	ft_putptr_fd(void *p, int fd)
 {
-	unsigned long	address;
-	char			*prefix;
-	int				i;
+    unsigned long	address;
+    char			*prefix;
+    int				i;
 
-	address = (unsigned long)p;
-	prefix = "0x";
-	i = 0;
-	i += ft_putstr_fd(prefix, fd);
-	i += ft_puthexl_fd(address, fd);
-	return (i);
+    if (!p)
+        return (ft_putstr_fd("(nil)", fd));
+
+    address = (unsigned long)p;
+    prefix = "0x";
+    i = 0;
+    i += ft_putstr_fd(prefix, fd);
+    i += ft_puthexl_fd((unsigned long)address, fd);
+    return (i);
 }
