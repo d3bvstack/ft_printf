@@ -35,7 +35,7 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJECTS)
 
-%.o: %.c ftprintf.h
+%.o: %.c ft_printf.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 .PHONY: all clean fclean re

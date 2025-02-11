@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ftprintf.h"
+#include "../ft_printf.h"
 
 static int	ft_count(int n)
 {
@@ -27,25 +27,25 @@ static int	ft_count(int n)
 	return (i);
 }
 
-void	ft_putnbr_fd(int n, int fd)
+int	ft_putnbr_fd(int n, int fd)
 {
-	int	n_2;
+	int	number;
 
-	n_2 = n;
-	if (n_2 == "-2147483648")
+	number = n;
+	if (number == -2147483648)
 		ft_putstr_fd("-2147483648", fd);
 	else
 	{
-		if (n_2 < 0)
+		if (number < 0)
 		{
-			n_2 = -n_2;
+			number = -number;
 			ft_putchar_fd('-', fd);
 		}
-		if (n_2 > 9)
+		if (number > 9)
 		{
-			ft_putnbr_fd(n_2 / 10, fd);
+			ft_putnbr_fd(number / 10, fd);
 		}
-		ft_putchar_fd(n_2 % 10 + '0', fd);
+		ft_putchar_fd(number % 10 + '0', fd);
 	}
 	return (ft_count(n));
 }

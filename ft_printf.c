@@ -18,7 +18,7 @@ static int	ft_parse(const char *format, va_list argument)
 
 	i = 0;
 	if (*(format + 1) == 'c')
-		i = ft_putchar_fd(va_arg(argument, char), 1);
+		i = ft_putchar_fd(va_arg(argument, int), 1);
 	else if (*(format + 1) == 's')
 		i = ft_putstr_fd(va_arg(argument, char *), 1);
 	else if (*(format + 1) == 'p')
@@ -43,15 +43,21 @@ int	ft_printf(const char *format, ...)
 	va_list	arguments;
 	int		i;
 
-	if (*format == '\0')
+	if (!format)
 		return (0);
 	va_start(arguments, format);
 	i = 0;
-	while (*format != '\0')
+	while (*format)
 	{
 		if (*format == '%')
 		{
 			i += ft_parse(format, arguments);
+			format += 2;
+		}
+		else 
+		{
+			i += ft_putchar_fd(*format, 1);
+			format++;
 		}
 	}
 	va_end(arguments);

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ftprintf.h                                         :+:      :+:    :+:   */
+/*   ft_printf.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,19 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FTPRINF_H
-# define FTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdarg.h>
 # include <stdlib.h>
 # include <unistd.h>
 
-int		ft_parse(const char *format, va_list argument);
-int		ft_printf(const char *format, ...);
-int		ft_putptr_fd(char *p, int fd);
-void	ft_putnbr_fd(int n, int fd);
+int		ft_putptr_fd(void *p, int fd);
+int     ft_putstr_fd(char *s, int fd);
+int 	ft_putnbr_fd(int n, int fd);
 int		ft_puthexl_fd(int n, int fd);
-int		ft_puthexl_fd(int n, int fd);
+int		ft_puthexu_fd(int n, int fd);
 int		ft_putchar_fd(char c, int fd);
+int		ft_printf(const char *format, ...);
 
 #endif

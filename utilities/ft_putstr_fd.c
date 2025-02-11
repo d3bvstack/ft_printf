@@ -20,27 +20,22 @@
 // 	ft_putstr_fd(str, 1);
 // }
 
-#include "ftprintf.h"
-
-static int	ft_strlen(char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != 0)
-		i++;
-	return (i);
-}
+#include "../ft_printf.h"
 
 int	ft_putstr_fd(char *s, int fd)
 {
 	char	*ptr;
+	int		i;
 
+	if (!s)
+		return (ft_putstr_fd("(null)", fd));
 	ptr = s;
+	i = 0;
 	while (*ptr != '\0')
 	{
 		write(fd, ptr, 1);
 		ptr++;
+		i++;
 	}
-	return (ft_strlen(s));
+	return (i);
 }

@@ -20,7 +20,7 @@
 // 	printf("\n%i\n", ft_puthexl_fd(number, 1));
 // }
 
-#include "ftprintf.h"
+#include "../ft_printf.h"
 
 int	ft_puthexu_fd(int n, int fd)
 {

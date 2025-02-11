@@ -21,9 +21,9 @@
 // 	return (1);
 // }
 
-#include "ftprintf.h"
+#include "../ft_printf.h"
 
-int	ft_putptr_fd(char *p, int fd)
+int	ft_putptr_fd(void *p, int fd)
 {
 	unsigned long	address;
 	char			*prefix;
