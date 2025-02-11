@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ftprintf.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/08 11:58:20 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/01/27 09:33:38 by dbarba-v         ###   ########.fr       */
+/*   Created: 2025/02/11 13:23:09 by dbarba-v          #+#    #+#             */
+/*   Updated: 2025/02/11 13:29:01 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef FTPRINF_H
+# define FTPRINTF_H
 
-int	ft_isascii(int c)
-{
-	if ((c >= 0) && (c <= 127))
-		return (1);
-	return (0);
-}
+# include <stdarg.h>
+# include <stdlib.h>
+# include <unistd.h>
+
+int		ft_parse(const char *format, va_list argument);
+int		ft_printf(const char *format, ...);
+int		ft_putptr_fd(char *p, int fd);
+void	ft_putnbr_fd(int n, int fd);
+int		ft_puthexl_fd(int n, int fd);
+int		ft_puthexl_fd(int n, int fd);
+int		ft_putchar_fd(char c, int fd);
+
+#endif

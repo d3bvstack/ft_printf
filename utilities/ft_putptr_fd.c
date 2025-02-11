@@ -1,25 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putptr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/08 12:53:04 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/01/27 13:33:31 by dbarba-v         ###   ########.fr       */
+/*   Created: 2025/02/11 11:30:16 by dbarba-v          #+#    #+#             */
+/*   Updated: 2025/02/11 13:22:54 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include <stdio.h>
+// #include <unistd.h>
+// int	main(void)
+// {
+// 	char	*address;
+// 	address = "Hello World";
+// 	ft_putptr_fd(address, 1);
+// 	printf("\n%p", address);
+// 	return (1);
+// }
 
-size_t	ft_strlen(const char *str)
+#include "ftprintf.h"
+
+int	ft_putptr_fd(char *p, int fd)
 {
-	size_t	i;
-	char	*string;
+	unsigned long	address;
+	char			*prefix;
+	int				i;
 
+	address = (unsigned long)p;
+	prefix = "0x";
 	i = 0;
-	string = (char *)str;
-	while (string[i] != 0)
-		i++;
+	i += ft_putstr_fd(prefix, fd);
+	i += ft_puthexl_fd(address, fd);
 	return (i);
 }
