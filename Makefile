@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+         #
+#    By: codespace <codespace@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/11 12:56:32 by dbarba-v          #+#    #+#              #
-#    Updated: 2025/02/11 13:21:20 by dbarba-v         ###   ########.fr        #
+#    Updated: 2025/02/12 08:37:18 by codespace        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ utilities/ft_puthexu_fd.c \
 utilities/ft_putptr_fd.c \
 utilities/ft_puthexl_fd.c \
 utilities/ft_putnbr_fd.c \
+utilities/ft_putuns_fd.c \
 utilities/ft_putstr_fd.c \
 
 OBJECTS = $(SOURCES:.c=.o)

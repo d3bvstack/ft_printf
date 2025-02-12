@@ -20,6 +20,7 @@
 int		ft_putptr_fd(void *p, int fd);
 int     ft_putstr_fd(char *s, int fd);
 int 	ft_putnbr_fd(int n, int fd);
+int     ft_putuns_fd(unsigned int, int fd);
 int		ft_puthexl_fd(unsigned long n, int fd);
 int		ft_puthexu_fd(unsigned long n, int fd);
 int		ft_putchar_fd(char c, int fd);

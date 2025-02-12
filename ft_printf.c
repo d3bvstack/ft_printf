@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 09:28:08 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/02/11 13:26:28 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/02/12 09:15:01 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	ft_parse(const char *format, va_list argument)
 	else if (*(format + 1) == 'd' || *(format + 1) == 'i')
 		i = ft_putnbr_fd(va_arg(argument, int), 1);
 	else if (*(format + 1) == 'u')
-		i = ft_putnbr_fd(va_arg(argument, unsigned int), 1);
+		i = ft_putuns_fd(va_arg(argument, unsigned int), 1);
 	else if (*(format + 1) == 'x')
 		i = ft_puthexl_fd(va_arg(argument, unsigned int), 1);
 	else if (*(format + 1) == 'X')
