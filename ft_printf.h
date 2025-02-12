@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                         :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 13:23:09 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/02/11 13:29:01 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/02/12 09:56:11 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 # include <unistd.h>
 
 int		ft_putptr_fd(void *p, int fd);
-int     ft_putstr_fd(char *s, int fd);
-int 	ft_putnbr_fd(int n, int fd);
-int     ft_putuns_fd(unsigned int, int fd);
+int		ft_putstr_fd(char *s, int fd);
+int		ft_putnbr_fd(int n, int fd);
+int		ft_putuns_fd(unsigned int n, int fd);
 int		ft_puthexl_fd(unsigned long n, int fd);
 int		ft_puthexu_fd(unsigned long n, int fd);
 int		ft_putchar_fd(char c, int fd);

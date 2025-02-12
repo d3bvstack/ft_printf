@@ -6,7 +6,7 @@
 /*   By: codespace <codespace@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 09:28:08 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/02/12 09:15:01 by codespace        ###   ########.fr       */
+/*   Updated: 2025/02/12 09:50:03 by codespace        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int	ft_printf(const char *format, ...)
 			i += ft_parse(format, arguments);
 			format += 2;
 		}
-		else 
+		else
 		{
 			i += ft_putchar_fd(*format, 1);
 			format++;
