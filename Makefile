@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: codespace <codespace@student.42.fr>        +#+  +:+       +#+         #
+#    By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/11 12:56:32 by dbarba-v          #+#    #+#              #
-#    Updated: 2025/02/12 14:44:35 by codespace        ###   ########.fr        #
+#    Updated: 2025/02/13 09:34:05 by dbarba-v         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
