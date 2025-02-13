@@ -6,7 +6,7 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 08:30:01 by codespace         #+#    #+#             */
-/*   Updated: 2025/02/12 10:44:06 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/02/13 09:33:41 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	ft_count(unsigned int n)
 
 int	ft_putuns_fd(unsigned int n, int fd)
 {
-	int i;
+	int	i;
 
 	i = ft_count(n);
 	if (n > 9)
