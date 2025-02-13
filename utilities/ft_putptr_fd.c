@@ -6,20 +6,9 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 11:30:16 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/02/13 09:34:18 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/02/13 09:35:11 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// #include <stdio.h>
-// #include <unistd.h>
-// int	main(void)
-// {
-// 	char	*address;
-// 	address = "Hello World";
-// 	ft_putptr_fd(address, 1);
-// 	printf("\n%p", address);
-// 	return (1);
-// }
 
 #include "../ft_printf.h"
 

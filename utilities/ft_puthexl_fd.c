@@ -6,19 +6,9 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 09:28:04 by dbarba-v          #+#    #+#             */
-/*   Updated: 2025/02/13 09:34:16 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/02/13 09:35:20 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// #include <stdio.h>
-// #include <unistd.h>
-
-// int	ft_puthexl_fd(int n, int fd);
-// int	main(void)
-// {
-// 	int number = 123456;
-// 	printf("\n%i\n", ft_puthexl_fd(number, 1));
-// }
 
 #include "../ft_printf.h"
 
