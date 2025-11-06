@@ -6,26 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 08:30:01 by codespace         #+#    #+#             */
-/*   Updated: 2025/02/13 11:09:50 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/11/06 16:15:30 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
-
-static int	ft_count(unsigned int n)
-{
-	int	i;
-
-	i = 0;
-	if (n <= 0)
-		i += 1;
-	while (n != 0)
-	{
-		n /= 10;
-		i += 1;
-	}
-	return (i);
-}
 
 int	ft_putuns_fd(unsigned int n, int fd)
 {
