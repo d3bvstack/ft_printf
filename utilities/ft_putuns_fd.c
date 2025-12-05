@@ -6,11 +6,11 @@
 /*   By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 08:30:01 by codespace         #+#    #+#             */
-/*   Updated: 2025/11/06 16:15:30 by dbarba-v         ###   ########.fr       */
+/*   Updated: 2025/12/05 23:56:25 by dbarba-v         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../ft_printf.h"
+#include "ft_printf.h"
 
 int	ft_putuns_fd(unsigned int n, int fd)
 {
