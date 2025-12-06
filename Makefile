@@ -6,7 +6,7 @@
 #    By: dbarba-v <dbarba-v@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/11 12:56:32 by dbarba-v          #+#    #+#              #
-#    Updated: 2025/02/13 09:34:05 by dbarba-v         ###   ########.fr        #
+#    Updated: 2025/12/06 12:42:01 by dbarba-v         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,7 @@ OBJECTS = $(SOURCES:.c=.o)
 
 CC = gcc
 
+INCLUDES = -I.
 CFLAGS = -Wall -Werror -Wextra
 
 AR = ar
@@ -37,7 +38,7 @@ $(NAME): $(OBJECTS)
 	$(AR) $(ARFLAGS) $(NAME) $(OBJECTS)
 
 %.o: %.c ft_printf.h
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 .PHONY: all clean fclean re
 
