@@ -13,10 +13,6 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdarg.h>
-# include <stdlib.h>
-# include <unistd.h>
-
 int	ft_putptr_fd(void *p, int fd);
 int	ft_putstr_fd(char *s, int fd);
 int	ft_putnbr_fd(int n, int fd);

@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdarg.h>
+#include <unistd.h>
 
 static int	ft_parse(const char *format, va_list argument, int fd)
 {
